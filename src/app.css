@@ -18,16 +18,12 @@
   flex: 1;
 }
 
-
-/* upper-container內的元素高度要置中
-*/
 .upper-container {
   display: flex;
   padding-top: 1%;
   padding-bottom: 1%;
   gap: 20px;
   align-items: center;
-
 }
 
 .info-container {
@@ -51,11 +47,7 @@
 
 .right-container {
   background-color: #e8eaf6;
-  /* padding-top: 3%;
-  padding-right: 1%;
-  padding-left: 3%; */
   display: flex;
-  /* flex-direction: column; */
   gap: 20px;
   width: 30%;
 }
@@ -63,8 +55,7 @@
 .com-port-container {
   display: flex;
   flex: auto;
-  padding-left: 2%;
-  /* flex-direction: column; */
+  width: 120%;
 }
 
 .select-field {
@@ -83,25 +74,60 @@
 }
 
 .btn {
-  background-color: #3f51b5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #283593;
+  background-color: #0056B3;
 }
 
-.btn:disabled {
-  background-color: #c5cae9;
+.btn.disabled {
+  background-color: #ccc;
   cursor: not-allowed;
 }
 
+.connect-controls-container {
+  display: flex;
+  flex: auto;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex: auto;
+  gap: 10px;
+}
+
+
+.input-field {
+  width: auto;
+  padding: 8px;
+  border: 1px solid #c5cae9;
+  border-radius: 4px;
+  font-size: 14px;
+  flex: auto;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.actions-container {
+  display: flex;
+  padding-right: 10px;
+  gap: 10px;
+}
 
 @media (max-width: 768px) {
   .main-container {
